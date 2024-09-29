@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 3;
+    color: #141413;
+    background-image: url("todoback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  main {
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(140, 168, 140);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(78, 71, 71, 0.1);
+    opacity: 90%;
+  }
+  
+  h1, h2 {
+    margin-bottom: 0px;
+    color: #042c06;
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-size: 34px;
+    color: black;
+  }
+  
+  
+  /* Logo Styles */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* add this to center the logo horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 200px; /* increase the width to enlarge the logo */
+    height: 200px; /* increase the height to enlarge the logo */
+    border-radius: 50%; /* add this to make the logo round */
+    margin-right: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 45px;
+    color: rgb(31, 33, 31);
+    animation: logoAnimation 3s ease-in-out;
+  }
+  
+  @keyframes logoAnimation {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Task List Styles */
+  
+  .task-list {
+    margin-bottom: 20px;
+  }
+  
+  .task-list ul {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+  }
+  
+  .task-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    color: #666;
+  }
+  
+  .task-list input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .task-list button {
+    margin-left: 30px;
+    background-color: #262826;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .task-list button:hover {
+    background-color: #90be7b;
+  }
+  
+  .task-list .delete-btn {
+    background-image: url('delete-icon.png');
+    background-size: 16px 16px;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .task-list .delete-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Add Task Form Styles */
+  
+  #add-task-form {
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  #add-task-btn {
+    background-color: #2c4436;
+    color: #0a1509;
+    border: none;
+    margin: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+  
+  #add-task-btn:hover {
+    background-color: #18512e;
+  }
+  
+  /* Filters Styles */
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters label {
+    margin-right: 20px;
+  }
+  
+  .filters input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .filters input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 600px) {
+    main {
+      margin: 20px;
+    }
+    .task-list li {
+      padding: 10px 5px;
+    }
+    .task-list button {
+      margin-left: 5px;
+    }
+    #add-task-form {
+      margin-bottom: 10px;
+    }
+    #task-input {
+      width: 100%;
+      padding: 5px;
+    }
+    #add-task-btn {
+      padding: 5px 10px;
+    }
+    .filters {
+      margin-bottom: 10px;
+    }
+    .filters label {
+      margin-right: 10px;
+    }
+  }
+  
+  /* Color Gradients */
+  
+  .task-list li {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+  }
+  
+  .task-list li:hover {
+    background-image: linear-gradient(to bottom, #f2f2f2, #fff);
+  }
+  
+  #add-task-btn {
+    background-image: linear-gradient(to bottom, #9fdbb5, #34473a);
+  }
+  
+  #add-task-btn:hover {
+    background-image: linear-gradient(to bottom, #2e403b, #527b5a);
+  }
