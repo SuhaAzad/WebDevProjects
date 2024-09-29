@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body
+{
+   background: rgb(34, 55, 68);  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 900px;
+    background: #fff;
+    display: grid;   
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_side
+{
+    position: relative;
+    background: #dde6eb;
+    padding: 40px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText
+{
+    coLor: black ;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    Line-height: 1.4em;
+}
+.profileText h2 span
+{
+font-size: 20px;
+font-weight: 10;
+}
+.contactlnfo
+{
+    padding: 5px;
+}
+.title
+{
+    color: black ;
+    text-transform: uppercase;
+    font-weight: 60;
+    Letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactlnfo ul
+{
+    position: relative;
+}
+.contactlnfo ul li
+{
+    position: relative;
+    List-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactlnfo ul li .icon
+{
+    display: inline-block;
+    width: 39px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactlnfo ul li span
+{
+    color: black;
+    font-weight: 300;
+}
+.contactlnfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactlnfo.education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactlnfo.education h4:nth-child(2)
+{
+    color: black;
+    font-weight: 500;;
+}
+.contactlnfo.education h4
+{
+    color: black;
+    font-weight: 100;;
+}
+
+
+.container .right_side
+{
+    color: #fff;
+    position: relative;
+    background: black;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about .box
+{
+    display: flex;
+    flex-direction : row;
+    margin: 50px 0;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    coLor: #848c99;
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: l0px;
+    background:#f0f0f0;
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    Left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    coLor: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa
+{
+    coLor: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width:1000px)
+{
+    .container 
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
